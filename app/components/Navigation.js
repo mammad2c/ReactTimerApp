@@ -14,7 +14,7 @@ var Navigation = React.createClass({
               <NavLink to="/" exact replace activeClassName="active-link">Timer</NavLink>
             </li>
             <li>
-              <NavLink to="/count-down" activeClassName="active-link">Countdown</NavLink>
+              <NavLink to="/countdown" replace activeClassName="active-link">Countdown</NavLink>
             </li>
           </ul>
         </div>

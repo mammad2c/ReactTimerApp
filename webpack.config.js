@@ -19,6 +19,10 @@ module.exports = {
     alias: {
       Navigation: __dirname + '/app/components/Navigation.js',
       applicationStyles: __dirname + '/app/styles/app.scss',
+      Timer: __dirname + '/app/components/Timer.js',
+      Countdown: __dirname + '/app/components/Countdown.js',
+
+
     },
     extensions: ['*', '.js', '.jsx']
   },

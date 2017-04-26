@@ -3,6 +3,8 @@ var ReactDOM = require('react-dom');
 var {HashRouter, Route, Link, Match, Miss} = require('react-router-dom');
 
 var Navigation = require('Navigation');
+var Timer = require('Timer');
+var Countdown = require('Countdown');
 // Load foundation
 require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
 $(document).foundation();
@@ -15,5 +17,7 @@ ReactDOM.render(
   <HashRouter>
     <div>
       <Navigation />
+      <Route exact path="/" component={ Timer } />
+      <Route path="/countdown" component={ Countdown } />
     </div>
   </HashRouter>, document.getElementById('app'));
