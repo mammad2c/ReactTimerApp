@@ -5,11 +5,11 @@ config.set({
   browsers: ['Chrome'],
   singleRun: true,
   frameworks: ['mocha'],
-  files: ['app/tests/**/*.test.jsx'],
+  files: ['app/tests/**/*.test.js'],
   preprocessors: {
-    'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
+    'app/tests/**/*.test.js': ['webpack', 'sourcemap']
   },
-  reportes: ['mocha'],
+  reporters: ['mocha'],
   client: {
     mocha: {
       timeout: '5000'

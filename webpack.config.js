@@ -2,7 +2,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
-    'script-loader!jquery/dist/jquery.min.js', 'script-loader!foundation-sites/dist/js/foundation.min.js', './app/app.jsx'
+    'script-loader!jquery/dist/jquery.min.js', 'script-loader!foundation-sites/dist/js/foundation.min.js', './app/app.js'
   ],
   externals: {
     jquery: 'jQuery'
@@ -21,8 +21,7 @@ module.exports = {
       applicationStyles: __dirname + '/app/styles/app.scss',
       Timer: __dirname + '/app/components/Timer.js',
       Countdown: __dirname + '/app/components/Countdown.js',
-
-
+      Clock: __dirname + '/app/components/Clock.js',
     },
     extensions: ['*', '.js', '.jsx']
   },
