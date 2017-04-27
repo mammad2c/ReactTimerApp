@@ -17,7 +17,11 @@ ReactDOM.render(
   <HashRouter>
     <div>
       <Navigation />
-      <Route exact path="/" component={ Timer } />
-      <Route path="/countdown" component={ Countdown } />
+      <div className="row">
+        <div className="column small-centered medium-6 large-4">
+          <Route exact path="/" component={ Timer } />
+          <Route path="/countdown" component={ Countdown } />
+        </div>
+      </div>
     </div>
   </HashRouter>, document.getElementById('app'));
